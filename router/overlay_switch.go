@@ -443,6 +443,10 @@ func (fwd *overlaySwitchForwarder) ErrorChannel() <-chan error {
 	return fwd.errorChan
 }
 
+func (fwd *overlaySwitchForwarder) HealthChannel() <-chan bool {
+	return fwd.healthChan
+}
+
 func (fwd *overlaySwitchForwarder) Stop() {
 	fwd.lock.Lock()
 	defer fwd.lock.Unlock()
