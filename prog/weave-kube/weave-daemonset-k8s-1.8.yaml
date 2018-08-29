@@ -125,7 +125,7 @@ items:
                     fieldRef:
                       apiVersion: v1
                       fieldPath: spec.nodeName
-              image: 'weaveworks/weave-kube:latest'
+              image: 'weaveworks/weave-kube:2.4.0'
               imagePullPolicy: Always
               livenessProbe:
                 httpGet:
@@ -161,7 +161,7 @@ items:
                     fieldRef:
                       apiVersion: v1
                       fieldPath: spec.nodeName
-              image: 'weaveworks/weave-npc:latest'
+              image: 'weaveworks/weave-npc:2.4.0'
               imagePullPolicy: Always
 #npc-args
               resources:
